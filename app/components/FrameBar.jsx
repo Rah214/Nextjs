@@ -31,19 +31,18 @@ const FrameBar = () => {
     containerStyles:
       "w-full px-[30px] max-w-[1140px] m-auto px-[32px] py-[27px] border-2 shadow-lg shadow-[#00000029] flex flex-col md:flex-row justify-between md:items-center gap-4",
     inputStyles:
-      "placeholder:border-none placeholder:w-auto text-black font-normal text-[13px] md:text-[16px]",
+      "placeholder:border-none bg-sky-100 max-w-[400px] px-3 py-1 placeholder:w-auto text-black font-normal text-[13px] md:text-[16px] focus:outline-none",
     labelStyles:
       "text-[#1AD4D4] font-bold lg:text-[20px] md:text-[18px] leading-7 pt-[18px]",
-    advancedFilterStyles: "text-[#1AD4D4] md:text-[16px] text-[14px] leading-6 font-normal",
+    advancedFilterStyles:
+      "text-[#1AD4D4] md:text-[16px] text-[14px] leading-6 font-normal",
   };
 
   return (
     <>
       <div className="w-full px-[30px]">
         <div className={frameBarData.containerStyles}>
-
           {/* Input Fields */}
-
           <div className="flex flex-col md:flex-row gap-4 lg:gap-8 md:gap-0">
             {frameBarData.formFields.map((field) => (
               <div key={field.id} className="flex flex-col">
@@ -58,7 +57,6 @@ const FrameBar = () => {
           </div>
 
           {/* Advanced Filter and Button */}
-          
           <div className="flex flex-wrap sm:flex-row gap-4 md:flex-col lg:flex-row items-center lg:gap-[16px] md:gap-[8px]">
             <p className={frameBarData.advancedFilterStyles}>
               {frameBarData.advancedFilterText}

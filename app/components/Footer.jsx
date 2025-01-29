@@ -2,7 +2,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-// import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 
 const Footer = () => {
   const footerSections = [
@@ -35,12 +37,13 @@ const Footer = () => {
     },
   ];
 
-//   const socialLinks = [
-//     { icon: <FaFacebookF />, url: "https://facebook.com" },
-//     { icon: <FaTwitter />, url: "https://twitter.com" },
-//     { icon: <FaLinkedinIn />, url: "https://linkedin.com" },
-//     { icon: <FaInstagram />, url: "https://instagram.com" },
-//   ];
+  const socialLinks = [
+    { icon: faFacebookF, url: "https://facebook.com" },
+    { icon: faTwitter, url: "https://twitter.com" },
+    { icon: faLinkedinIn, url: "https://linkedin.com" },
+    { icon: faInstagram, url: "https://instagram.com" },
+  ];
+
 
   return (
     <footer className="w-full bg-black lg:mt-[152px] mt-[100px] pb-6 px-5 text-white">
@@ -85,7 +88,7 @@ const Footer = () => {
           <div className="text-[14px] font-normal leading-[21.7px] opacity-[80%]">
             &copy; Copyright 2025, All Rights Reserved by OurHome
           </div>
-          {/* <div className="flex mt-4 md:mt-0 space-x-4">
+          <div className="flex mt-4 md:mt-0 space-x-4">
             {socialLinks.map((social, index) => (
               <a
                 key={index}
@@ -94,10 +97,10 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-white text-[18px] hover:text-[#1AD4D4] transition-colors duration-300"
               >
-                {social.icon}
+                <FontAwesomeIcon icon={social.icon} />
               </a>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>

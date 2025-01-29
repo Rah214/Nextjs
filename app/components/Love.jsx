@@ -16,7 +16,7 @@ const Love = () => {
             position: "CEO, Let's Connect",
             feedback:
                 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-            starSrc: '/images/star.png',
+            starSrc: '/star.png',
         },
         {
             id: 2,
@@ -25,7 +25,7 @@ const Love = () => {
             position: "CEO, Let's Connect",
             feedback:
                 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-            starSrc: '/images/star.png',
+            starSrc: '/star.png',
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ const Love = () => {
             position: 'Founder, Techies',
             feedback:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu justo vel mauris efficitur viverra at vitae lorem.',
-            starSrc: '/images/star.png',
+            starSrc: '/star.png',
         },
         {
             id: 4,
@@ -43,8 +43,8 @@ const Love = () => {
             position: 'CTO, Innovators',
             feedback:
                 'Proin vel nunc et velit faucibus hendrerit non eget nulla. Morbi quis arcu dictum, faucibus odio vel, molestie arcu.',
-            starSrc: '/star.png',
-        },
+                starSrc: '/star.png',
+            },
     ];
 
     return (

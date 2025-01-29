@@ -85,7 +85,7 @@ const Navbar = () => {
                 href={item.link}
                 onClick={() => handleLinkClick(item.link)}
                 className={`relative inline-block transition-all duration-300 ease-in-out ${
-                  activeLink === item.link ? "text-red-500" : "text-black"
+                  activeLink === item.link ? "text-[#1AD4D4] text-[18px] font-bold" : "text-black"
                 }`}
               >
                 {item.name}
