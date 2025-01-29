@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Selling = () => {
+const FastSelling = () => {
     const properties = [
         {
             imgSrc: '/R2.png',
@@ -66,7 +66,7 @@ const Selling = () => {
                                 src="/R1.png"
                                 width={500}
                                 height={50}
-                                className="text-center  lg:max-w-full md:max-w-[300px] max-w-[200px]"
+                                // className="text-center  lg:max-w-full md:max-w-[300px] max-w-[200px]"
                                 alt="Featured Property"
                             />
                         </div>
@@ -80,36 +80,35 @@ const Selling = () => {
                                     <div className='flex justify-center'>
                                         <Image
                                             src={property.imgSrc}
-                                            alt="Property Image"
-                                            width={250}
+                                            width={277}
                                             height={50}
-                                            className="xl:max-w-full lg:max-w-[200px] max-w-[200px]"
-
+                                            className="xl:w-full lg:w-[200px] md:w-[300px] w-full"
+                                            
                                         />
                                     </div>
                                     <div className='flex flex-col '>
                                         <div className='flex flex-col md:items-start items-center'>
-
-                                            {property.description.map((line, idx) => (
-                                                <p
-                                                    key={idx}
-                                                    className="font-normal text-[14px] leading-[21.7px]"
-                                                >
-                                                    {line}
-                                                </p>
-                                            ))}
-                                            <h1 className="text-[16px] font-bold leading-[24px] pt-7">
-                                                {property.price}
-                                            </h1>
-                                            <h1 className="text-[16px] font-bold leading-[24px]">
-                                                {property.size}
-                                            </h1>
-                                            <a
-                                                href={property.link}
-                                                className="text-[21px] hover:text-[#3c7b7b] text-[#1AD4D4] font-bold leading-[24px] pt-[20px] block"
+                                            
+                                        {property.description.map((line, idx) => (
+                                            <p
+                                                key={idx}
+                                                className="font-normal text-[14px] leading-[21.7px]"
                                             >
-                                                Read More
-                                            </a>
+                                                {line}
+                                            </p>
+                                        ))}
+                                        <h1 className="text-[16px] font-bold leading-[24px] pt-7">
+                                            {property.price}
+                                        </h1>
+                                        <h1 className="text-[16px] font-bold leading-[24px]">
+                                            {property.size}
+                                        </h1>
+                                        <a
+                                            href={property.link}
+                                            className="text-[21px] hover:text-[#3c7b7b] text-[#1AD4D4] font-bold leading-[24px] pt-[20px] block"
+                                        >
+                                            Read More
+                                        </a>
                                         </div>
                                     </div>
                                 </div>
@@ -122,5 +121,4 @@ const Selling = () => {
     );
 };
 
-export default Selling;
-
+export default FastSelling;
