@@ -46,7 +46,7 @@ const Blog = () => {
               <a
                 key={blog.id}
                 href={blog.link}
-                className="flex flex-col max-w-[364px] w-full gap-4  rounded-md hover:shadow-lg transition-shadow duration-300"
+                className="flex flex-col max-w-[364px] w-full gap-4 p-2 rounded-md hover:shadow-xl transition-shadow duration-300 hover:text-[#1AD4D4]"
               >
                 {/* Blog Image */}
                 <Image
@@ -55,17 +55,19 @@ const Blog = () => {
                   height={50}
                   className="w-full h-auto rounded-t-md object-cover"
                   alt={blog.title}
-                />
+                  />
 
                 {/* Blog Content */}
                 <div className="p-4">
                   <h1 className="text-[20px] leading-[28px] font-bold text-[#060101] hover:text-[#1AD4D4] transition-colors duration-300">
                     {blog.title}
                   </h1>
+                  
                   <p className="text-[#1AD4D4] leading-[24px] font-normal mt-2 hover:underline">
                     {blog.category}
                   </p>
                 </div>
+               
               </a>
             ))}
           </div>
