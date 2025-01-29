@@ -71,7 +71,7 @@ const Hero = () => {
                 <a
                   key={index}
                   href={button.link}
-                  className={`px-4 md:px-[40px] py-2 md:py-[18px] rounded-[6px] md:text-[16px] text-[14px] font-semibold leading-6 ${button.style}`}
+                  className={`px-4 md:px-[40px] flex items-center py-2 md:py-[18px] rounded-[6px] md:text-[16px] text-[14px] font-semibold leading-6 ${button.style}`}
                 >
                   {button.text}
                 </a>

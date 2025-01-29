@@ -76,8 +76,10 @@ const Navbar = () => {
         {/* Navigation Items */}
         <ul
           className={`absolute md:static top-full left-0 w-full md:w-auto bg-[#e6f7f7] md:bg-transparent transition-all duration-300 ease-in-out overflow-hidden ${
-            isOpen ? "block" : "hidden"
-          } md:flex flex-wrap gap-4 md:gap-[25px] lg:gap-[32px] pt-[20px] md:pt-0 cursor-pointer font-medium text-[16px] leading-6 z-[1000]`}
+            isOpen
+              ? "h-screen mt-4 bg-[#e6f7f7] opacity-100 text-center"
+              : "max-h-0 text-center md:max-h-screen opacity-0 md:opacity-100"
+          } md:flex flex-wrap gap-4 md:gap-[25px] lg:gap-[32px] pt-[20px] md:pt-0 cursor-pointer font-medium text-[16px] leading-6 z-[1000]  `}
         >
           {navItems.map((item, index) => (
             <li key={index} className="relative group">
@@ -117,3 +119,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+// 
