@@ -46,7 +46,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="w-full bg-black lg:mt-[152px] mt-[100px] pb-6 px-5 text-white">
+    <footer className="w-full bg-black lg:mt-[152px] md:mt-[100px] mt-[50px] pb-6 px-5 text-white">
       <div className="m-auto max-w-[1140px] md:pt-[92px] pt-[62px]">
         {/* Footer Content */}
         <div className="md:flex md:flex-row flex-col sm:min-w-[562px] min-w-full mx-auto justify-between md:pb-[62px] pb-[32px]">
