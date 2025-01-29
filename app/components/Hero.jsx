@@ -86,8 +86,8 @@ const Hero = () => {
             <Image
               src={heroContent.images.floating.src}
               alt={heroContent.images.floating.alt}
-              width={100}
-              height={100}
+              width={700}
+              height={50}
               className="w-auto h-auto"
             />
           </div>

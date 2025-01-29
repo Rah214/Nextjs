@@ -83,7 +83,7 @@ const FastSelling = () => {
                                             width={277}
                                             height={50}
                                             className="xl:w-full lg:w-[200px] md:w-[300px] w-full"
-                                            
+                                            alt='Image'
                                         />
                                     </div>
                                     <div className='flex flex-col '>
