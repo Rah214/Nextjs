@@ -48,7 +48,7 @@ const Love = () => {
     ];
 
     return (
-        <main className="w-full md:py-[110px] py-[80px]">
+        <main className="w-full md:py-[110px] py-[30px]">
             <div className="max-w-[1140px] px-[22px] m-auto">
                 {/* Heading Section */}
                 <div className="flex md:gap-4 flex-col md:pb-[50px]  text-center">
@@ -77,7 +77,7 @@ const Love = () => {
                 >
                     {testimonials.map((testimonial) => (
                         <SwiperSlide key={testimonial.id}>
-                            <div className="flex relative justify-center items-center w-full md:max-w-[558px] min-h-[400px] max-h-[400px]  mx-auto px-[50px] border-[1px] border-[#BAF2F2] rounded-[16px] bg-white mb-[60px] ">
+                            <div className="flex relative justify-center items-center w-full md:max-w-[558px] max-w-[500px] md:min-h-[400px] min-h-[300px] max-h-[400px]  mx-auto md:px-[50px] px-[30px] border-[1px] border-[#BAF2F2] rounded-[16px] bg-white mb-[60px] ">
                                 <Image
                                     src={testimonial.imgSrc}
                                     width={300}
@@ -89,7 +89,7 @@ const Love = () => {
                                     <p className="font-normal leading-[24px] text-[#3D3D3D] text-center">
                                         {testimonial.feedback}
                                     </p>
-                                    <hr className="max-w-[456px] border-[1px] border-[#BAF2F2] " />
+                                    <hr className="md:max-w-[456px]  border-[1px] border-[#BAF2F2] " />
                                     <div className="flex justify-between pb-[40px] flex-col md:flex-row items-center">
                                         <div>
                                             <h1 className="font-bold leading-[28px] text-[20px]">
