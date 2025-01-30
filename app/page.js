@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './components/Hero' 
+import Hero from './components/Hero'
 import FrameBar from './components/FrameBar'
 import About from './components/About'
 import Why from './components/Why'
@@ -11,14 +11,16 @@ import Blog from './components/Blog'
 const page = () => {
   return (
     <>
-    <Hero/>
-    <FrameBar/>
-    <About/>
-    <Why/>
-    <Properties/>
-    <Selling/>
-    <Love/>
-    <Blog/>
+
+
+      <Hero />
+      <FrameBar />
+      <About />
+      <Why />
+      <Properties />
+      <Selling />
+      <Love />
+      <Blog />
     </>
   )
 }
